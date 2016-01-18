@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/u2"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_gray" />
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/u4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_share"
+            style="@style/RadioButtonBottomTab"
+            android:checked="false"
+            android:background="@drawable/home_icon" />
+
+        <RadioButton
+            android:id="@+id/rb_book"
+            style="@style/RadioButtonBottomTab"
+            android:checked="false"
+            android:background="@drawable/book_icon"/>
+
+
+
+        <RadioButton
+            android:background="@drawable/selfinfo_icon"
+            android:id="@+id/rb_user"
+            style="@style/RadioButtonBottomTab"
+            android:checked="false" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
